@@ -1,14 +1,32 @@
 # rga.js
 
-A [Next.js](#nextjs-enterprise-boilerplate) site / coding playground.
+[rga-js.vercel.app](https://rga-js.vercel.app/): a [Next.js](https://github.com/Blazity/next-enterprise)
+coding playground.
 
 ## Getting Started
+
+### Prerequisites
+
+This project runs on Node.js 18. It is recommended to use NVM to install and run Node.js:
+
+- Linux & macOS: https://github.com/nvm-sh/nvm#installing-and-updating
+- Windows: https://github.com/coreybutler/nvm-windows#installation--upgrades
+  (_IMPORTANT:_ [run installer as Administrator](https://stackoverflow.com/questions/50563188/access-denied-issue-with-nvm-in-windows-10))
+
+Once
+
+```bash
+nvm install 18
+nvm use 18
+```
+
+### Running the Application
 
 To run this code locally, follow these steps:
 
 ```bash
 git clone https://github.com/ryangallen/rga-js.git
-yarn install --frozen-lockfile
+yarn install
 yarn dev
 ```
 

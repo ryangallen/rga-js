@@ -11,7 +11,7 @@ const pages = [
 
 export default function HomePage() {
   return (
-    <PageContent title="Home">
+    <PageContent title="Excercises">
       <ul className="m-4 list-disc">
         {pages.map(({ title }) => (
           <li>

@@ -14,7 +14,7 @@ export default function PageContent({ title, ...props }: PageProps) {
         <p className="mt-8 text-xs text-slate-500">
           <a
             target="_blank"
-            href={`https://github.com/ryangallen/rga-js/blob/main/app/${title.toLowerCase()}/page.tsx`}
+            href={`https://github.com/ryangallen/rga-js/blob/main/app/${title.toLowerCase()}`}
           >
             See the Code
           </a>

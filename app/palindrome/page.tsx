@@ -3,15 +3,7 @@
 import { useState } from "react";
 
 import PageContent from "components/PageContent/PageContent";
-
-export function isPalindrome(input: string) {
-  const cleanInputArr = input
-    .toLowerCase()
-    .replace(/[^a-z0-9]/gi, "")
-    .split("");
-
-  return cleanInputArr.toString() === cleanInputArr.reverse().toString();
-}
+import { isPalindrome } from "./palindrome";
 
 const example = "A man, a plan, a canal, Panama";
 

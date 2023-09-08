@@ -1,4 +1,4 @@
-import { isPalindrome } from "./is-palindrome";
+import { isPalindrome } from "./page";
 
 describe("isPalindrome", () => {
   it.each([

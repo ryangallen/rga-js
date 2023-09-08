@@ -1,8 +1,8 @@
 "use client";
 
-import PageContent from "components/PageContent/PageContent";
-
 import { kebabCase } from "lodash";
+
+import PageContent from "components/PageContent/PageContent";
 
 const pages = [
   // { title: "Game of Life" },
@@ -13,11 +13,14 @@ export default function HomePage() {
   return (
     <PageContent title="Excercises">
       <ul className="m-4 list-disc">
-        {pages.map(({ title }) => (
-          <li>
-            <a href={`/${kebabCase(title)}`}>{title}</a>
-          </li>
-        ))}
+        {pages.map(({ title }) => {
+          const kebabTitle = kebabCase(title);
+          return (
+            <li key={kebabTitle}>
+              <a href={`/${kebabTitle}`}>{title}</a>
+            </li>
+          );
+        })}
       </ul>
     </PageContent>
   );

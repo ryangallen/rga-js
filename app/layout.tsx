@@ -1,5 +1,3 @@
-import Head from "next/head";
-
 import "../styles/tailwind.css";
 
 const title = "rga.js";

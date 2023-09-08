@@ -11,7 +11,7 @@ export default function Palindrome() {
   const [phrase, setPhrase] = useState(example);
 
   return (
-    <PageContent title="Palindrome">
+    <PageContent title="Palindrome" showCodeLink>
       <input
         type="text"
         value={phrase}

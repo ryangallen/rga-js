@@ -12,6 +12,14 @@ export default function Palindrome() {
 
   return (
     <PageContent title="Palindrome" showCodeLink>
+      <p className="mb-8 border-b border-slate-200 pb-6 text-slate-700">
+        <strong>Prompt:</strong> Implement a function that checks if a given
+        string is a palindrome. A palindrome is a word, phrase, or sequence of
+        characters that reads the same backward as forward, ignoring spaces,
+        punctuation, and capitalization. Your function should return{" "}
+        <code>true</code> if the input is a palindrome and <code>false</code>{" "}
+        otherwise.
+      </p>
       <input
         type="text"
         value={phrase}

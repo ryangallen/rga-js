@@ -7,6 +7,7 @@ import PageContent from "components/PageContent/PageContent";
 const pages = [
   // { title: "Game of Life" },
   { title: "Palindrome" },
+  { title: "Least Recently Used" },
 ];
 
 export default function HomePage() {
@@ -17,7 +18,7 @@ export default function HomePage() {
           const kebabTitle = kebabCase(title);
           return (
             <li key={kebabTitle}>
-              <a href={`/${kebabTitle}`}>{title}</a>
+              <a href={`/exercises/${kebabTitle}`}>{title}</a>
             </li>
           );
         })}

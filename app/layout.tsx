@@ -23,7 +23,7 @@ export default function RootLayout({
         </header>
 
         <main>
-          <div className="mx-auto max-w-5xl p-4">{children}</div>
+          <div className="mx-auto max-w-5xl p-6">{children}</div>
         </main>
       </body>
     </html>

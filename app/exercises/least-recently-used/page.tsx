@@ -1,10 +1,11 @@
 import PageContent from "components/PageContent/PageContent";
+import { LinkedNode, DoublyLinkedList } from "./lruCache";
 
 export default function LeastRecentlyUsedPage() {
   return (
     <PageContent title="Least Recently Used" showCodeLink>
       <p className="mb-4">
-        <strong>Problem:</strong> Implement a "Least Recently Used" (LRU) cache,
+        <strong>Prompt:</strong> Implement a "Least Recently Used" (LRU) cache,
         which is a data structure that can store a fixed number of items. When
         the cache reaches its limit, it should remove the least recently used
         item to make space for a new item. Implement the LRU cache with the
@@ -23,12 +24,13 @@ export default function LeastRecentlyUsedPage() {
         </li>
       </ol>
 
-      <pre className="mb-4 overflow-x-auto rounded-md border-2 border-indigo-500 p-4">{`const lruCache = new LRUCache(2); // Capacity is 2
+      <pre className="mb-4 overflow-x-auto rounded-md border border-green-700 bg-slate-800 p-4 text-xs text-green-500 shadow-lg">{`const lruCache = new LRUCache(2); // Capacity is 2
 lruCache.put(1, 1); // Cache: {1=1}
 lruCache.put(2, 2); // Cache: {1=1, 2=2}
 lruCache.get(1);    // Returns 1
 lruCache.put(3, 3); // Cache: {2=2, 3=3}, 1 is removed because it's the least recently used.
-lruCache.get(2);    // Returns -1 (not found)
+lruCache.get(1);    // Returns -1 (not found)
+lruCache.get(2);    // Returns 2
 lruCache.get(3);    // Returns 3`}</pre>
 
       <p className="mb-4">
@@ -45,12 +47,14 @@ lruCache.get(3);    // Returns 3`}</pre>
         using a combination of a hash map (for fast key-value lookups) and a
         doubly linked list (to keep track of the usage order).
       </p>
-      <p className="mb-4">
+      <p>
         You can start by designing the structure of the <code>LRUCache</code>{" "}
         class and then implement the <code>get</code> and <code>put</code>{" "}
         methods accordingly. This problem tests your ability to design a complex
         data structure and implement efficient algorithms for cache management.
       </p>
+
+      <div className="my-6 border-b border-slate-200" />
     </PageContent>
   );
 }

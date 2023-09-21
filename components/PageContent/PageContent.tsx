@@ -22,7 +22,7 @@ export default function PageContent({
           <a
             target="_blank"
             rel="noreferrer"
-            href={`https://github.com/ryangallen/rga-js/blob/main/app/${kebabCase(
+            href={`https://github.com/ryangallen/rga-js/blob/main/app/exercises/${kebabCase(
               title
             )}`}
           >
